@@ -37,7 +37,28 @@ console.log(highest_mark);
 //sort((a, b) => b - a) দিয়ে বড় থেকে ছোট সাজিয়েছি।
 //sorted[1] → দ্বিতীয় index এর ভ্যালু হল 2nd largest
 
-let num = [12, 45, 27, 89, 32, 67, 56];
+let num = [12, 45, 7, 89, 32, 89];
 let sorted = [...num].sort((a, b) => b - a);
+console.log(sorted); // বড় থেকে ছোট
 let second_largest = sorted[1];
 console.log(second_largest);
+//remove duplicate value
+let sorted_number=[...new Set(num)].sort((a,b)=>b-a);
+console.log(sorted_number); //remove duplicate with descending order
+let second_large=sorted_number[1];
+console.log(second_large);
+
+//? Set
+//**  Set হলো JavaScript এর একটি data structure যেটি ডুপ্লিকেট (একই) ভ্যালু রাখতে দেয় না।
+//যখন আমরা new Set(numbers) লিখি, তখন numbers অ্যারের ডুপ্লিকেট গুলো আপনি-আপনি বাদ হয়ে যায়।
+let geep=[3, 5, 8, 9, 2, 4, 5, 3, 2, 10, 8, 9]
+let sorted_geep=new Set(geep); //remove duplicate
+let array_geep=[...sorted_geep]; //turns into array
+let descending_order=array_geep.sort((a,b)=>b-a);
+let largest_geep=descending_order[0];
+let second_geep=descending_order[1];
+console.log(descending_order);
+console.log(array_geep);
+console.log(sorted_geep);
+console.log(largest_geep);
+console.log(second_geep);
