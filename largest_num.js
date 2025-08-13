@@ -57,8 +57,8 @@ let array_geep=[...sorted_geep]; //turns into array
 let descending_order=array_geep.sort((a,b)=>b-a);
 let largest_geep=descending_order[0];
 let second_geep=descending_order[1];
+console.log(sorted_geep);
 console.log(descending_order);
 console.log(array_geep);
-console.log(sorted_geep);
 console.log(largest_geep);
 console.log(second_geep);
