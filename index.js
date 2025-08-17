@@ -17,9 +17,7 @@ console.log(friends)
 let sentence = ["Ant", "love", "you"];
 const array = [];
 for (let i = sentence.length - 1; i >= 0; i--){
-  array.push(sentence[i]);
-
- 
+  array.push(sentence[i]); 
 }
 console.log(array)
 // const str = array.toLocaleString();
