@@ -48,4 +48,4 @@ function countOfVowel(word) {
 }
 console.log(countOfVowel('minhajul'));
 
-
+//
