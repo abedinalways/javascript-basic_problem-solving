@@ -62,3 +62,35 @@ console.log(salaryUpdated([
   { name: 'Mehedi', salary: 60000 },
   { name: 'Arif', salary: 30000 },
 ]))
+
+function countVowel(word) {
+  let vowels = "aeiouAEIOU";
+  let count = 0;
+  for (char of word) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countVowel('minhajul abedin'))
+
+function findPairs(array, target) {
+  let seen = new Set();
+  let pairs = [];
+  for (num of array) {
+    let complement = target - num;
+    if (seen.has(complement)) {
+      pairs.push([num, complement]);
+    }
+    seen.add(num);
+  }
+  return pairs;
+}
+console.log(findPairs([2, 4, 3, 5, 7, 8, 1], 9));
+
+let bill = [400, 500, 600, 700];
+let newBill = new Set(bill);
+console.log(typeof newBill)
+let newA = [...newBill];
+console.log(newA)
