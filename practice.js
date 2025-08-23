@@ -36,10 +36,54 @@ function findPairs(arr, target) {
   for (num of arr) {
     let complement = target - num;
     if (seen.has(complement)) {
-      pairs.push[num, complement]
+      pairs.push([num, complement])
     }
     seen.add(num);
   }
   return pairs;
 }
 console.log(findPairs([2, 4, 3, 5, 7, 8, 1], 9));
+
+function revSentence(sentence) {
+  let newSentence = sentence.split(' ').reverse().join(' ');
+  return newSentence;
+}
+console.log(revSentence("Shajin Loves shamim"));
+
+function Slice(arry) {
+  const newArray = [...arry.slice(1, -1)];
+  return newArray;
+}
+console.log(Slice(['shahin', 'badhon', 'faruk', 'dip', 'ripon', 'kader', 'fahad', 'saad', 'polash']))
+
+//join
+
+function passage(array) {
+  let newPassage = array.join(" , ");
+  return newPassage;
+}
+console.log(passage(['Banana', 'Orange', 'Apple', 'Mango']));
+
+const myGirls = ['Cecilie', 'Lone'];
+const myBoys = ['Emil', 'Tobias', 'Linus'];
+const newArr = myGirls.concat(myBoys)
+console.log(newArr)
+
+//flat() ==>>jora lagano
+const myArr = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
+console.log(myArr.flat());
+
+const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+const newFruits = fruits.splice(2, 0, "pineapple", "litchi");
+console.log(newFruits)
+console.log(fruits)
+//splice() মূল array-কে পরিবর্তন করে
+//এটি remove করা item return করে
+
+const fruitsss = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango'];
+const citrus = fruitsss.slice(3);
+console.log(citrus);

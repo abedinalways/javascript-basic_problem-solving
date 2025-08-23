@@ -43,6 +43,9 @@ let uo = "i have a book";
 let split = uo.split(" ");
 console.log( typeof split)
 console.log(split);
+ 
+
+
 
 //remove white space
 //trim() method can remove white space from start and end
